@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root{
+    --gray-bg : #d8d8d8 ;
+    --hero-font: #4a4a4a;
+    --font-nm:24px;
+    --btn-read:#4a90e2;
+    --img-width:60%;
+    --img-margin:32px 24px;
+    --bd-color:#eaebec;
+}
+
+* {
+  font-family: "Inter",sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -----------Nav section------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 24px;
+}
+nav ul li {
+    margin-left: 16px;
+}
+nav ul li a {
+  font-size: 18px;
+}
+.logo .colmar_academy{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 24px;
+}
+.logo .colmar_academy img{
+    height: 32px;
+  }
+.logo .colmar{
+    font-weight: bold;
+}
+.logo .academy{
+    color:#acacac;
+}
+/* -----------Nav section------------- */
+body{
+    color:var(--hero-font);
+}
+/* -----------Hero Section-------------- */
+.hero{
+    background-color: var(--gray-bg);
+}
+.hero_box{
+    display: flex;
+}
+.hero .hero_box_img{
+    margin: var(--img-margin);
+    width: var(--img-width);
+}
+.hero_box_img{
+    width: 100%;
+    height: auto;
+}
+.hero .hero_box_text{
+    align-self: center;
+}
+.hero_box_text .hero_title{
+    font-weight: 800;
+    font-size: 64px;
+}
+.hero_box_text .hero_text{
+    font-weight:500;
+    font-size: 40px;
+    line-height: 4rem;
+    margin: 2rem 0;
+}
+.hero_btn{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    background-color: var(--hero-font);
+    cursor: pointer;
+}/* -----------Hero Section-------------- */
+/* -----------Information Section-------------- */
+.info_box{
+    display: flex;
+}
+.info_left{
+    margin: var(--img-margin);
+    width: 60%;
+}
+.info_left_img img{
+    width: 100%;
+    height: auto;
+}
+.info_left_title{
+    font-size: 52px;
+    font-weight: 800;
+    padding-top: 32px;
+    padding-bottom:24px;
+}
+.info_left_text{
+    font-size: var(--font-nm);
+    font-weight: 300;
+}
+.info_left_credit{
+    margin-top:32px;
+    font-size: var(--font-nm);
+}
+
+
+
+
+.info_right{
+    width: 40%;
+    padding-top: 32px;
+    border-left: 1px solid var(--bd-color);
+}
+.info_right_box{
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid var(--bd-color);
+}
+.info_right_box:last-child {
+    border-bottom: none;
+}
+.info_right_img{
+    width: 35%;
+    margin-right: 16px;
+    height: auto;
+}
+.info_right_box_text{
+    align-self: center;
+    width: 100%;
+}
+.info_right_title{
+    font-size: 38px;
+    font-weight: 600;
+}
+.info_right_date{
+    font-size: var(--font-nm);
+    font-weight: 300;
+    margin: 8px 0;
+}
+.info_btn{
+    color: var(--btn-read);
+    font-size: var(--font-nm);
+    cursor: pointer;
+}
+.info_right_box:hover{
+    background-color: var(--gray-bg);
+}
+/* -----------Information Section-------------- */
+/* --------------Course Section------------- */
+.course{
+    background-color: #eaebec;
+}
+.course_main{
+    text-align: center;
+    padding-top: 32px;
+    font-size: 52px;
+    font-weight: 800;
+}
+.course_box{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    align-self: center;
+    padding:32px 72px;
+    gap: 32px;
+}
+.course_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.course_img{
+    width: 100%;
+    height: auto;
+}
+.course_text_box {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left:16px;
+    padding-top:16px;
+    padding-bottom: 24px;
+    flex-direction: column;
+}
+.course_title{
+    font-size: 32px;
+    font-weight: 600;
+}
+.course_info{
+    line-height: 2.5rem;
+}
+.course_class,.course_info{
+    font-size: var(--font-nm);
+    padding-top:8px;
+    font-weight: 300;
+}
+/* --------------Course Section------------- */
+/*------------ Thesis section---------- */
+.thesis_main{
+    text-align: center;
+    padding: 32px 0;
+    font-size: 52px;
+    font-weight: 800;
+}
+.thesis_box{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.thesis_left{
+    padding:0 24px;
+}
+.thesis_video {
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000;
+}
+.thesis_left_title{
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 24px;
+    padding-bottom:8px;
+}
+.thesis_left_info{
+    font-size: var(--font-nm);
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+
+
+
+.thesis_right_items{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+.thesis_right_img{
+    width: 35%;
+    margin-right: 16px;
+    height: auto;
+}
+.thesis_right_box_text{
+    width: 65%;
+}
+.thesis_right_title{
+    font-size: 38px;
+    font-weight: 600;
+}
+.thesis_right_info{
+    font-size: var(--font-nm);
+    font-weight: 300;
+    margin: 8px 0;
+}
+.thesis_right_items:hover{
+    background-color: var(--gray-bg);
+}
+/*------------ Thesis section---------- */
+/*---------- Footer section ---------*/
+.footer {
+    margin-top: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid var(--gray-bg);
+}
+.footer .footer_right{
+    display: flex;
+    gap: 1rem;
+}
